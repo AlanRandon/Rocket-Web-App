@@ -1,0 +1,26 @@
+<nav class="sticky top-0 self-start w-full bg-base-200 dark:bg-base-700 py-4 flex flex-col sm:flex-row justify-center items-center shadow">
+    <span class="w-fit text-left px-8 uppercase">
+        {{> components/icons/logo classes="inline-block rounded-full h-8 w-8 text-white" }}
+        Lorem Ipsum
+    </span>
+    <button type="button" id="nav-menu-button" aria-haspopup="true" aria-controls="nav-menu"
+        class="group sm:hidden px-2 relative icon grid" aria-label="Open Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon opacity-100 transition inset-0 absolute" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon opacity-0 transition inset-0 absolute" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </button>
+    <div id="nav-menu-container" class="hidden sm:!block">
+        <ul class="sm:flex flex-col sm:flex-row justify-center gap-4" id="nav-menu" role="menu"
+            aria-labelledby="nav-menu-button">
+            <li><a href="/" class="nav-link">Home</a></li>
+            <li><a href="#2" class="nav-link">About</a></li>
+            <li><a href="#3" class="nav-link">Contact</a></li>
+            <li><a href="#4" class="nav-link">White Vans</a></li>
+        </ul>
+    </div>
+</nav>

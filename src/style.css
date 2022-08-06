@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root,
+  body {
+    @apply w-full h-full m-0 bg-base-50 dark:bg-base-800 dark:text-white grid place-items-center gap-4;
+  }
+
+  body {
+    @apply text-center;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+    @apply box-border;
+  }
+
+  ::selection {
+    @apply bg-black/70 text-white dark:bg-white/70 dark:text-white;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-primary-300
+      dark:bg-primary-800
+      p-2
+      shadow
+      rounded-[100vmax]
+      border-4
+      border-transparent
+      hover:bg-primary-100
+      dark:hover:bg-primary-900
+      focus:border-primary-400
+      dark:focus:border-primary-700
+      focus:shadow-lg
+      hover:shadow-lg
+      transition;
+  }
+
+  .icon {
+    @apply h-6 w-6;
+  }
+
+  .icon-clickable {
+    @apply group-focus-within:fill-current
+      fill-transparent
+      transition;
+  }
+
+  .nav-link {
+    @apply inline-block 
+      w-fit
+      pt-1
+      focus:outline-none
+      opacity-75
+      hover:opacity-100
+      focus:opacity-100
+      hover:text-primary-600
+      focus:text-primary-600
+      transition
+      hover:after:scale-x-100
+      focus:after:scale-x-100
+      after:scale-x-0
+      after:bg-current
+      after:block
+      after:w-full
+      after:h-1
+      after:transition
+      after:origin-left
+      after:transform;
+  }
+
+  .body-text {
+    @apply inline-block text-base-600 dark:text-base-300 max-w-[40ch];
+  }
+}

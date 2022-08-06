@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "noEmit": true,
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "esnext",
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "preserveConstEnums": true,
+    "noUnusedLocals": true,
+    "allowUnreachableCode": false,
+    "alwaysStrict": true,
+    "noUnusedParameters": true,
+    "lib": ["esnext", "dom"],
+    "typeRoots": ["./node_modules/@types", "./types"]
+    /*
+  
+      // allows "$example/file" instead of "really/long/path/example/file" for imports
+  
+      "paths": {
+        "$example/*": ["./really/long/path/example/*"]
+      }
+      
+      */
+  },
+  "include": ["*.ts", "types/*.ts"],
+  "exclude": ["node_modules", "client/**/*.ts"]
+}

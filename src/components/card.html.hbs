@@ -1,0 +1,11 @@
+<section class="bg-base-200 dark:bg-base-700 rounded text-left p-4 shadow w-fit">
+    <div class="bg-primary-300 dark:bg-primary-800 grid place-items-center h-10 w-10 rounded-md shadow">
+        {{#> icon }}
+            {{> components/icons/question-mark-circle }}
+        {{/icon}}
+    </div>
+    <h2 class="text-lg font-black">{{ title }}</h2>
+    <span class="body-text grid gap-4">
+        {{> @partial-block }}
+    </span>
+</section>

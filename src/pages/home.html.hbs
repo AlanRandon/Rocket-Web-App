@@ -1,0 +1,73 @@
+{{#> base }}
+{{> components/nav }}
+<h1
+    class="text-7xl font-black [background-clip:text] text-transparent bg-gradient-to-r from-primary-400 dark:from-primary-600 to-primary-analogous-400 dark:to-primary-analogous-600">
+    Lorem ipsum
+    <br />
+    <span class="font-light">dolor sit amet</span>
+</h1>
+{{> components/icons/logo classes="inline-block rounded-full h-64 w-64 text-base-50 dark:text-base-800" }}
+<div class="flex p-8 gap-4 w-fit items-center justify-center flex-wrap">
+
+    {{#> components/card title="Lorem Ipsum" icon="academic-cap" }}
+
+    {{#*inline "icon"}}
+    {{> components/icons/bookmark }}
+    {{/inline}}
+
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint animi expedita quibusdam eaque accusamus laborum odio
+    tempore aperiam rem inventore?
+    <button class="btn w-full group">
+        {{> components/icons/bookmark classes="icon-clickable inline-block" }}
+        Click Me
+    </button>
+
+    {{/ components/card }}
+
+    {{#> components/card title="Lorem Ipsum" icon="academic-cap" }}
+
+    {{#*inline "icon"}}
+    {{> components/icons/adjustments }}
+    {{/inline}}
+
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, fugit velit! Nesciunt optio commodi hic non harum
+    exercitationem iusto amet!
+    <button class="btn w-full group">
+        {{> components/icons/adjustments classes="icon-clickable inline-block" }}
+        Click Me
+    </button>
+
+    {{/ components/card }}
+
+    {{#> components/card title="Lorem Ipsum" icon="academic-cap" }}
+
+    {{#*inline "icon"}}
+    {{> components/icons/beaker }}
+    {{/inline}}
+
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod eveniet delectus nesciunt, magni facilis sapiente
+    dignissimos! Doloribus enim quia perspiciatis!
+    <button class="btn w-full group">
+        {{> components/icons/beaker classes="icon-clickable inline-block" }}
+        Click Me
+    </button>
+
+    {{/ components/card }}
+
+</div>
+<section>
+    <h2 class="text-xl font-black">Lorem Ipsum</h2>
+    <span class="body-text inline-block p-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse temporibus ducimus, recusandae adipisci nobis sint
+        vero quisquam vel animi magnam modi asperiores unde itaque natus dignissimos voluptatum laboriosam ab, neque
+        facilis
+        at, inventore illo ullam omnis a. Est repellendus, vero cumque ipsum veniam dolor voluptatibus officiis rem
+        illum
+        voluptates iusto distinctio. Cum eum aspernatur labore velit pariatur quas quia dicta ipsa error! Tempore
+        recusandae
+        rerum minima odio quisquam molestias laborum possimus, totam quo eius a omnis explicabo qui blanditiis vero,
+        repellendus minus pariatur architecto nulla nisi. Vel expedita, nemo, dolorum explicabo perferendis corrupti
+        excepturi officia iusto mollitia nostrum ipsam at.
+    </span>
+</section>
+{{/ base }}
